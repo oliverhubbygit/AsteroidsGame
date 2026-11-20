@@ -54,7 +54,7 @@ class Asteroid extends Floater
   }
   public void move() {
     myPointDirection += rotSpeed;
-
+    rotSpeed = (int)(Math.random()*5)+1;
     if (type.equals("Rainbow")) {
       hue = (hue + hueSpeed) % 360;
 
